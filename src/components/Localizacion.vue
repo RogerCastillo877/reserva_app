@@ -22,6 +22,5 @@ export default {
 
 @media (max-width: 600px) {
   .localizacion { height: 90vh; padding-bottom: 0; padding-top: 3em;}
-  .localizacion .map img { max-width: 200%; width: 200%;}
 }
 </style>
