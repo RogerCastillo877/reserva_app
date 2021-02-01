@@ -81,8 +81,8 @@ export default {
           this.resultado = !this.resultado
           this.user_in_db = this.form
           let self = this
-          axios.put("http://127.0.0.1:8000/user/register/", this.user_in_db)
-          // axios.put("https://reserva-api-tosko.herokuapp.com/user/register/", this.user_in_db)
+          // axios.put("http://127.0.0.1:8000/user/register/", this.user_in_db)
+          axios.put("https://reserva-api-tosko.herokuapp.com/user/register/", this.user_in_db)
           .then((result) => {
               self.name = result.data.nombre
               self.usuario = result.data.username

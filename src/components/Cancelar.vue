@@ -58,8 +58,8 @@ export default {
       this.resultado = !this.resultado
       this.reserva_cancel_in = this.form
       let self = this
-      axios.put("http://127.0.0.1:8000/user/reserva/cancel/", this.reserva_cancel_in)
-      // axios.put("https://reserva-api-tosko.herokuapp.com/user/reserva/cancel/", this.reserva_cancel_in)
+      // axios.put("http://127.0.0.1:8000/user/reserva/cancel/", this.reserva_cancel_in)
+      axios.put("https://reserva-api-tosko.herokuapp.com/user/reserva/cancel/", this.reserva_cancel_in)
       .then((result) => {
         self.id_reserve = result.data.id_reserva
         self.status = result.data.estado

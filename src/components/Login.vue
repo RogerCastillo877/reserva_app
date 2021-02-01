@@ -52,8 +52,8 @@ export default {
     },
     processLogin: function(){
       var self = this
-      axios.post("http://127.0.0.1:8000/user/login/", self.form)
-      // axios.post("https://reserva-api-tosko.herokuapp.com/user/login/", self.form)
+      // axios.post("http://127.0.0.1:8000/user/login/", self.form)
+      axios.post("https://reserva-api-tosko.herokuapp.com/user/login/", self.form)
       .then((_result) => {
         alert("Autenticación Exitosa");
         self.$emit('log-in');

@@ -67,8 +67,8 @@ export default {
         this.resultado = !this.resultado
         this.id_reserva = this.id_reserva_in
         let self = this
-        axios.get("http://127.0.0.1:8000/user/reserva/" + this.id_reserva)
-        //axios.get("https://reserva-api-tosko.herokuapp.com/user/reserva/" + this.id_reserva)
+        // axios.get("http://127.0.0.1:8000/user/reserva/" + this.id_reserva)
+        axios.get("https://reserva-api-tosko.herokuapp.com/user/reserva/" + this.id_reserva)
         .then((result) => {
           self.id_reserve = result.data.id_reserva
           self.name = result.data.nombre

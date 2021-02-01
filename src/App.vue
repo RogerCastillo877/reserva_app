@@ -38,14 +38,6 @@
         <a v-on:click="cancel_reserva">Cancelar</a>
       </nav>
       <router-view v-on:log-in="logIn"></router-view>
-      <!-- <HelloWorld/> -->
-      <!-- <Inicio/> -->
-      <!-- <Registrarse/> -->
-      <!-- <Login/> -->
-      <!-- <What/>
-      <How/>
-      <Services/>
-      <Localizacion/> -->
     </div>
 
     <footer class="footer">
@@ -67,7 +59,6 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import Inicio from './components/Inicio.vue'
 import Login from './components/Login.vue'
 import Registrarse from './components/Registrarse.vue'
@@ -79,7 +70,6 @@ import How from './components/How'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Inicio,
     Registrarse,
     Login,
@@ -164,14 +154,6 @@ export default {
 </script>
 
 <style>
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
