@@ -32,7 +32,7 @@
     </header>
 
     <div class="main-component">
-      <nav v-if="is_auth">
+      <nav >
         <a v-on:click="make_reserva">Reservar</a><!--v-if="is_auth"-->
         <a v-on:click="get_reserva">Consultar</a>
         <a v-on:click="cancel_reserva">Cancelar</a>
